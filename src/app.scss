@@ -1,0 +1,126 @@
+// NativeScript core theme
+// @see https://docs.nativescript.org/ui/theme
+@import '~@nativescript/theme/core';
+@import '~@nativescript/theme/default';
+
+// Tailwind CSS
+@import '~nativescript-tailwind/dist/tailwind.css';
+
+// Fonts
+.roboto {
+    font-family: 'Roboto-Medium';
+}
+.regular {
+    font-family: 'Roboto-Regular';
+}
+.bold {
+    font-family: 'Roboto-Bold';
+}
+
+// FontAwesome
+.fa-brands {
+    font-family: 'Font Awesome 5 Brands', 'fa-brands-400';
+}
+
+.far {
+    font-family: 'Font Awesome 5 Free', 'fa-regular-400';
+    font-weight: 400;
+}
+
+.fas {
+    font-family: 'Font Awesome 5 Free', 'fa-solid-900';
+    font-weight: 900;
+}
+
+.fa-sm {
+    font-size: 6px;
+}
+
+.fa-base {
+    font-size: 8px;
+}
+
+// Global
+Frame {
+    background: linear-gradient(0deg, #29344a, #3c4862);;
+}
+
+Page {
+    @extend .roboto;
+    background: #20273a;
+}
+
+ActionBar {
+    background-color: #202b3f;
+}
+
+.text-primary {
+    color: white;
+}
+
+.text-secondary {
+    color: #fefefc;
+}
+
+.text-additional {
+    color: #979893;
+}
+
+.text-blue {
+    color: #13a2ff;
+}
+
+.bg-primary {
+    background-color: #20273a;
+}
+
+.btn-primary {
+    background-color: #158bef;
+    color: white;
+
+    &:active {
+        color: rgb(225, 245, 255);
+    }
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+    border-width: 0;
+
+    &:active {
+        color: rgb(225, 245, 255);
+    }
+}
+
+.btn-link {
+    color: white;
+
+    &:active {
+        color: #158bef;
+    }
+}
+
+.radio-label {
+    font-size: 15px;
+    color:  #158bef;
+}
+
+TextField {
+    color: white;
+    border-bottom-color: #158bef;
+    placeholder-color: rgba(219, 219, 219, 0.7);
+}
+
+ActionBar Label {
+    font-size: 18;
+}
+
+.card-bg-gradient {
+    background: linear-gradient(90deg, #29344a, #3c4862);
+}
+
+.card-bg {
+    background-color: #283349;
+}

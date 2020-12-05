@@ -1,0 +1,26 @@
+# NPM
+node_modules
+npm-debug.log
+package-lock.json
+
+# Yarn
+yarn.lock
+
+# NativeScript application
+hooks
+platforms
+
+# Firebase
+google-services.json
+GoogleService-Info.plist
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# System Files
+.DS_Store
+Thumbs.db
