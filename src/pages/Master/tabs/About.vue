@@ -13,20 +13,16 @@
         </GridLayout>
         
         <!-- Hook -->
-        
         <Label textWrap="true" text="Seraph is community-driven, fault-tolerant and low-priced." class="text-secondary text-lg leading-loose mt-2 mx-4"></Label>
 
         <!-- Description -->
-        <StackLayout class="mx-4 my-4">
+        <StackLayout class="mx-4 mt-4 mb-4">
             <Label textWrap="true" class="text-secondary leading-loose">
                 <FormattedString>
-                    <Span text.decode="This application was developed and made available to the Switcheo community free of charge by&#xa;" />
-                    <Span text="Seraph Staking " fontWeight="Bold" class="text-blue-500 hover:text-blue-800" />
+                    <Span text.decode="This application was developed and made available to the Switcheo community free of charge by" />
+                    <Span text=" Seraph Staking " fontWeight="Bold" class="text-blue-500 hover:text-blue-800" />
                     <Span text.decode="&#xf35d;" fontWeight="Bold" class="fas text-blue-500 hover:text-blue-800" />
-                    <Span text.decode=".&#xa;&#xa;" />
-
-                    <Span text="App Version " />
-                    <Span text="1.0.0" fontWeight="Bold" />
+                    <Span text.decode="." />
                 </FormattedString>
             </Label>
         </StackLayout>
@@ -43,6 +39,21 @@
 
             <Label textWrap="true" text="The easiest way to support us is to dedicate a part of your stake to the Seraph Staking validator!" class="leading-loose"></Label>
             <Button @tap="openStakingShortcut" text="Stake 🤍" class="btn-primary rounded-full mt-4 py-4 px-8" />
+        </StackLayout>
+
+        <StackLayout class="divide-y" />
+
+        <!-- Acknowledgements -->
+        <StackLayout class="text-secondary bold leading-loose mx-4">
+            <Label textWrap="true" class="text-lg">
+                <FormattedString>
+                    <Span text="Acknowledgements" />
+                    <Span text.decode=" &#xf259; " class="fas" />
+                </FormattedString>
+            </Label>
+
+            <Label textWrap="true" text="Guardians of TradeHub (Gian Wick)" class="leading-loose mt-1"></Label>
+            <Label textWrap="true" text="Devel & Co (Coco, Devel484)" class="leading-loose"></Label>
         </StackLayout>
     
     </StackLayout>
