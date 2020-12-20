@@ -292,6 +292,9 @@ export default {
         }
       });
 
+      // Ignoring small balances...
+      wallet = wallet.filter(x => parseFloat(x.available.plus(x.staked).toFormat(x.decimals)) > 0);
+
       return wallet;
     },
     stakings() {
@@ -332,7 +335,7 @@ export default {
           let amount = new BigNumber(validatorReward.amount);
           amount = this.getShiftedAmount(denom, amount);
 
-          if (amount.toFormat(constants.REWARDS_PRECISION) <= 0)
+          if (parseFloat(amount.toFormat(constants.REWARDS_PRECISION)) == 0)
             return;
 
           stakingRewards.push({
